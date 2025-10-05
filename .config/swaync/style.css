@@ -1,0 +1,196 @@
+@define-color cc-bg #1e0f13dd;
+@define-color noti-border-color #F23980dd;
+@define-color noti-bg rgba(0, 0, 0, 0.9);
+@define-color noti-bg-opaque rgba(0, 0, 0, 0.8);
+@define-color noti-bg-darker rgba(0, 0, 0, 0.8);
+@define-color noti-bg-hover transparent;
+@define-color noti-bg-hover-opaque transparent;
+@define-color noti-bg-focus #F23980;
+@define-color noti-close-bg  rgba(0, 0, 0, 0.8);
+@define-color noti-close-bg-hover  rgba(0, 0, 0, 0.8);
+@define-color text-color #FBFFFF ;
+@define-color text-color-disabled #F23980;
+@define-color bg-selected #F23980;
+
+
+* {
+    font-family: Wonder Unit Sans Propo;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 6px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: @text-color;
+}
+
+.control-center {
+    background: @cc-bg;
+    color: @text-color;
+    border-radius: 6px;
+}
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @noti-bg-darker;
+}
+.control-center-list {
+    background: transparent;
+}
+.control-center-list-placeholder {
+    opacity: 0.5;
+}
+
+/* Notification box */
+.notification {
+    background: @noti-bg;
+    border: 3px solid @noti-border-color;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 5px;
+    box-shadow:
+        0px 0.1em #1d2021,
+        0px 0px;
+}
+.notification-content {
+    background: @noti-bg;
+    margin: 5px;
+}
+.notification-row {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+.notification-default-action {
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+}
+.notification-action {
+    border-top: none;
+    border-radius: 6px;
+}
+.notification-default-action:hover,
+.notification-action:hover {
+    color: @bg-selected;
+    background: @noti-bg-hover;
+}
+.notification-default-action:not(:only-child) {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.notification-action:first-child,
+.notification-action:last-child {
+    background: @noti-bg-darker;
+}
+
+.notification-group-close-all-button,
+.notification-group-collapse-button {
+    border-radius: 6px;
+    padding: 0.1em;
+    margin: 2px;
+    min-width: 10px;
+    min-height: 10px;
+}
+
+.image {
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.summary {
+  font-size: 14px;
+  font-weight: 700;
+  background: #F23980; /* Your Watch Dogs-style cyan */
+  color: #000000;       /* Text color for contrast */
+  text-shadow: none;
+  padding: 6px 10px;
+  margin: 0px -2px 6px -2px;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.time {
+    font-size: 12px;
+    font-weight: 600;
+    color: @text-color-disabled;
+    margin-right: 5px;
+}
+.body {
+    font-size: 14px;
+    font-weight: 400;
+    color: @text-color;
+}
+
+/* Close button */
+.close-button {
+    background: #665c54;
+    min-width: 10px;
+    min-height: 10px;
+    padding: 0;
+    border-radius: 6px;
+    margin-top: 0.2em;
+    margin-right: 0;
+    box-shadow: 0px 0px 0.8em rgba(0, 0, 0, 0.15);
+}
+.close-button:hover {
+    background: #cc241d;
+    box-shadow: none;
+    transition: all 0.15s ease-in-out;
+    border: none;
+}
+
+.floating-notifications {
+    background: transparent;
+}
+.blank-window {
+    background: alpha(black, 0.1);
+}
+
+/*** Widgets ***/
+.widget-title {
+    background: @noti-bg-darker;
+    padding: 4px 8px;
+    font-size: 1.5rem;
+    margin: 8px 8px 4px 8px;
+    border-radius: 6px;
+    color: @bg-selected;
+}
+.widget-title > button {
+    background: @noti-bg;
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 6px;
+    padding: 1px 12px;
+}
+.widget-title > button:hover {
+    background: @noti-bg-hover;
+}
+.widget-dnd {
+    background: @noti-bg-darker;
+    padding: 4px 8px;
+    margin: 8px 8px 4px 8px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+}
+.widget-dnd > switch {
+    background: @noti-bg;
+}
+.widget-dnd > switch:checked {
+    background: @text-color-disabled;
+}
+.widget-dnd > switch slider,
+.widget-dnd > switch:checked slider {
+    background: @text-color-disabled;
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 6px;
+}
+
+/* Label widget */
+.widget-label {
+    margin: 8px;
+}
+.widget-label > label {
+    font-size: 1.1rem;
+}
+
+

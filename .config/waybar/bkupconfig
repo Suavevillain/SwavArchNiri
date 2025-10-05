@@ -1,0 +1,84 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "reload_style_on_change": true,
+
+  "modules-left": [
+    "niri/workspaces"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "power-profiles-daemon",
+    "pulseaudio",
+    "custom/weather",
+    "battery",
+    "tray"
+  ],
+
+  "niri/workspaces": {
+    "all-outputs": false,
+    "disable-scroll": false,
+    "format": "●"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}|",
+    "format-icons": ["󰕿 ", "󰖀 ", "󰕾 "],
+    "format-muted": "󰝟 ",
+    "on-click": "pavucontrol",
+    "tooltip-format": "{volume}% ({desc})",
+    "scroll-step": 5
+  },
+
+  "clock": {
+    "format": "<span color='#689d6a'>󰥔</span> {:%I:%M:%S %p}",
+    "format-alt": "<span color='#689d6a'></span> {:%m-%d-%Y}",
+    "tooltip": true,
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "on-click-right": "gsimplecal",
+    "interval": 1
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 2
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "󰥔",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "/home/swavlabs/.local/bin/wttrbar --fahrenheit --mph",
+    "return-type": "json"
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
+  }
+}
+

@@ -1,0 +1,32 @@
+sw_volume: 88
+audio_device_state:1:pulse audio
+audio_device_state:1:toggle_visualizer
+audio_device_state:1:Swav
+state: stop
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 5
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:Singles/Keep It Tucked.mp3
+1:Singles/komixd - [FREE] Danganronpa x Anime Sample Type Beat - 'Hope'.mp3
+2:Singles/madbliss - bombs over baghdad.mp3
+3:Singles/LouBeats 2 - Playboi Carti - Glock [Prod.LouBeats].mp3
+4:Singles/Mahareshi_M_-_I_Never_Will_Rouge_s_Theme_Sample-Vubey.mp3
+5:Singles/Nas Barker - Baby Smoove - Losing My Mind.mp3
+6:Singles/playboicarti - molly [destxmido edit].mp3
+7:Singles/Project Pat - Don't Call Me No Mo' (SOUDIERE phonk flip).mp3
+8:Singles/PURPLE POTIONS VIP.mp3
+9:Singles/Q-Tip - Damn You're Cool.mp3
+10:Singles/R-Type Special - Sweet Flying - 1993.mp3
+11:Singles/sacred.mp3
+12:Singles/Samon Kawamura- How Long♪♫♪.mp3
+13:Singles/Seishun Buta Yarou - Fukashigi no Carte Instrumental (KARAOKE).mp3
+14:Singles/SGP - HEADBUSS FLIP.mp3
+15:Singles/silenthillplayboycartibeat.mp3
+16:Singles/Tell Em (SEGA EDITION) [prod. ScrewStache].mp3
+playlist_end

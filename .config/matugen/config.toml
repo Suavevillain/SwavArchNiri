@@ -1,0 +1,33 @@
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-type", "center"]
+set = true
+
+
+[templates.waybar]
+input_path = './templates/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.kitty]
+input_path = './templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
+[templates.starship]
+input_path = './templates/starship-colors.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.fuzzel]
+input_path = 'path/to/template'
+output_path = '~/.config/fuzzel/colors.ini'
+
+
+[templates.yazi]
+input_path = './templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
