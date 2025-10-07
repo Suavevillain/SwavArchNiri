@@ -339,6 +339,51 @@ window-rule {
     open-floating true
 }
 
+//-----Window size state-----//
+
+window-rule {
+    match app-id="firefox"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="brave"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="com.github.taiko2k.tauonmb"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="com.github.th_ch.youtube_music"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="vesktop"
+    open-fullscreen true
+}
+
+//-----Window default openings-----//
+
+window-rule {
+    match app-id="vesktop$"
+    open-on-output "DP-2"
+}
+
+window-rule {
+    match app-id="com.github.taiko2k.tauonmb"
+    open-on-output "HDMI-A-2"
+}
+
+window-rule {
+    match app-id="com.github.th_ch.youtube_music"
+    open-on-output "HDMI-A-2"
+}
+
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -379,7 +424,7 @@ binds {
     Super+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+Z hotkey-overlay-title="Web Browser" { spawn "firefox"; }
     Alt+B hotkey-overlay-title="Web Browser" { spawn "brave"; }
-    Mod+N hotkey-overlay-title="File Manager" { spawn "thunar"; }
+    Mod+N hotkey-overlay-title="File Manager" { spawn "nautilus"; }
     Alt+E hotkey-overlay-title="Emoji" { spawn "bemoji"; }
     Alt+N allow-when-locked=true hotkey-overlay-title=null { spawn-sh "swaync-client -t -sw || exec swaync-client"; }
     Alt+V hotkey-overlay-title="Vesktop" { spawn "vesktop"; }
