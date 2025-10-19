@@ -1,0 +1,17 @@
+[plugin]
+deps = []
+
+[[flavor.deps]]
+use = "ficcdaf/ashen:ashen"
+rev = "e0d552f"
+hash = ""
+
+[[flavor.deps]]
+use = "bennyyip/gruvbox-dark"
+rev = "91fdfa7"
+hash = ""
+
+[[flavor.deps]]
+use = "AdithyanA2005/nord"
+rev = "37ad6d4"
+hash = ""
