@@ -178,7 +178,7 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-        active-gradient from="#FB418A" to="#7fc8ff" angle=180
+        active-gradient from="#7fc8ff" to="#D1C5D5" angle=180
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
@@ -282,7 +282,7 @@ spawn-sh-at-startup "xdg-desktop-portal-gnome"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
-spawn-sh-at-startup "waypaper --restore"
+//spawn-sh-at-startup "waypaper --restore"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "docker restart searxng"
 
@@ -447,6 +447,7 @@ binds {
     Mod+P allow-when-locked=true hotkey-overlay-title="Clipboard History" { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
     Super+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen toggle"; }
     Alt+Escape hotkey-overlay-title="session menu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Alt+W hotkey-overlay-title="session menu" { spawn-sh "	qs -c noctalia-shell ipc call wallpaper toggle"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
