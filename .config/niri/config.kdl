@@ -436,7 +436,7 @@ binds {
     Mod+Z hotkey-overlay-title="Web Browser" { spawn "firefox"; }
     Alt+B hotkey-overlay-title="Web Browser" { spawn "brave"; }
     Mod+N hotkey-overlay-title="File Manager" { spawn "nautilus"; }
-    //Alt+E hotkey-overlay-title="Emoji" { spawn "bemoji"; }
+    Alt+E hotkey-overlay-title="Emoji" { spawn "emote"; }
     Alt+N allow-when-locked=true hotkey-overlay-title=null { spawn-sh "swaync-client -t -sw || exec swaync-client"; }
     Alt+V hotkey-overlay-title="Vesktop" { spawn "vesktop"; }
 
@@ -531,7 +531,7 @@ binds {
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
+    //Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
