@@ -178,7 +178,7 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-        active-gradient from="#7fc8ff" to="#D1C5D5" angle=180
+        active-gradient from="#8A71AB" to="#8A71AB" angle=180
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
@@ -349,7 +349,26 @@ window-rule {
 }
 
 window-rule {
-    match app-id="brave"
+    match app-id="Vivaldi-flatpak"
+    open-maximized true
+    open-fullscreen true
+}
+
+window-rule {
+    match app-id="vivaldi-ecjgjblkdeopicnpcfdkhmepiojiknpc-Default"
+    open-fullscreen true
+    open-maximized true
+}
+
+window-rule {
+    match app-id="vivaldi-ajinkohnfhbdebdnggdbjkgjflfhcnkk-Default"
+    open-fullscreen true
+    open-maximized true
+}
+
+window-rule {
+    match app-id="vivaldi-bbcbahpbnakjldhdcgiblnjnfgaejidg-Default"
+    open-fullscreen true
     open-maximized true
 }
 
@@ -383,6 +402,19 @@ window-rule {
 window-rule {
     match app-id="com.github.th_ch.youtube_music"
     open-on-output "HDMI-A-2"
+}
+
+
+//-----Window opacity-----//
+
+window-rule {
+    match app-id="kitty"
+    opacity 0.95
+}
+
+window-rule {
+    match app-id="com.github.th_ch.youtube_music"
+    opacity 0.95
 }
 
 
@@ -433,8 +465,8 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     //Super+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
-    Mod+Z hotkey-overlay-title="Web Browser" { spawn "firefox"; }
-    Alt+B hotkey-overlay-title="Web Browser" { spawn "brave"; }
+    Mod+Z hotkey-overlay-title="Firefox" { spawn "firefox"; }
+    Alt+B hotkey-overlay-title="Vivaldi" { spawn "com.vivaldi.Vivaldi"; }
     Mod+N hotkey-overlay-title="File Manager" { spawn "nautilus"; }
     Alt+E hotkey-overlay-title="Emoji" { spawn "emote"; }
     Alt+N allow-when-locked=true hotkey-overlay-title=null { spawn-sh "swaync-client -t -sw || exec swaync-client"; }
