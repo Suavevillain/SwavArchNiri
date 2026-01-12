@@ -1,0 +1,23 @@
+set font "Inter"
+set dpi 110
+set adjust-open "best-fit"
+set statusbar-home-tilde "true"
+set selection-clipboard "clipboard"
+
+# One page per row by default
+set pages-per-row 1
+#stop at page boundries
+set scroll-page-aware "true"
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+#zoom settings
+set zoom-min 10
+set guioptions ""
+
+
+map D set "first-page-column 1:1"
+map <C-d> set "first-page-column 1:2"
+
+
