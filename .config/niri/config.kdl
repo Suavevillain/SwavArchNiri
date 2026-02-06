@@ -273,7 +273,7 @@ spawn-at-startup "swww-daemon"
 spawn-at-startup "swww" "restore"
 spawn-at-startup "kdeconnectd"
 spawn-at-startup "kdeconnect-indicator"
-spawn-at-startup "swaync"
+//spawn-at-startup "swaync"
 
 
 //screenshare support etc.
@@ -350,7 +350,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="waterfox"
+    match app-id="net.waterfox.waterfox"
     open-maximized true
 }
 
@@ -485,7 +485,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     //Super+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
-    Mod+Z hotkey-overlay-title="Firefox" { spawn "waterfox"; }
+    Mod+Z hotkey-overlay-title="Firefox" { spawn "net.waterfox.waterfox"; }
     Alt+B hotkey-overlay-title="Vivaldi" { spawn "com.vivaldi.Vivaldi"; }
     Mod+N hotkey-overlay-title="File Manager" { spawn "nautilus"; }
     Alt+E hotkey-overlay-title="Emoji" { spawn "emote"; }
@@ -756,4 +756,7 @@ layer-rule {
  }
 }
 
+
+
+include "./noctalia.kdl"
 

@@ -30,7 +30,7 @@ max-items 100
 refresh-on-startup yes
 
 #Browser
-browser "firefox %u"
+browser "net.waterfox.waterfox %u"
 
 
 

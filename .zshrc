@@ -26,6 +26,7 @@ alias weather='curl wttr.in/Jacksonville FL'
 alias remove='sudo pacman -R'
 alias restartwaybar='hyprctl dispatch exec waybar'
 alias yazikeys='bat /home/swav/Documents/yazi.md'
+alias nirishot='bat --language=markdown ~/Documents/info4term/nirishotkeys.md'
 
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
@@ -55,3 +56,6 @@ function y() {
 
 #default terminal
 export TERMINAL=kitty
+
+
+export BEMOJI_PICKER_CMD="fuzzel -d"

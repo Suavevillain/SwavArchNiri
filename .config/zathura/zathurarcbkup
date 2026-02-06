@@ -1,0 +1,62 @@
+# ------------------------------
+# Font and DPI
+# ------------------------------
+set font "Inter"
+set dpi 110               # HDPI scaling
+set adjust-open "best-fit"
+
+# ------------------------------
+# Clipboard & UI
+# ------------------------------
+set statusbar-home-tilde "true"
+set selection-clipboard "clipboard"
+
+# ------------------------------
+# Page layout & scrolling
+# ------------------------------
+set pages-per-row 1       # One page per row by default
+set scroll-page-aware "true"   # Stop at page boundaries
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+# Zoom settings
+set zoom-min 10
+set guioptions ""         # Hide extra GUI if present
+
+# ------------------------------
+# Keybindings
+# ------------------------------
+map D set "first-page-column 1:1"
+map <C-d> set "first-page-column 1:2"
+
+# ------------------------------
+# Tokyo Night Colors
+# ------------------------------
+set default-bg "#1a1b26"        # Dark background
+set default-fg "#c0caf5"        # Light text
+set statusbar-fg "#c0caf5"
+set statusbar-bg "#1a1b26"
+set inputbar-fg "#c0caf5"
+set inputbar-bg "#1a1b26"
+set notification-fg "#c0caf5"
+set notification-bg "#565f89"   # Dark gray accent for notifications
+set notification-error-bg "#f7768e"
+set notification-error-fg "#1a1b26"
+set notification-warning-bg "#ff9e64"
+set notification-warning-fg "#1a1b26"
+set highlight-color "#7aa2f7"
+set highlight-active-color "#bb9af7"
+set completion-bg "#1a1b26"
+set completion-fg "#c0caf5"
+set completion-group-bg "#16161e"
+set completion-group-fg "#7aa2f7"
+
+# ------------------------------
+# Optional: Recolor pages (dark mode)
+# ------------------------------
+set recolor "true"
+set recolor-keephue "true"
+set recolor-lightcolor "#c0caf5"
+set recolor-darkcolor "#1a1b26"
+
